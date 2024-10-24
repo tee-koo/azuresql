@@ -1,0 +1,36 @@
+
+
+# Luodaan uusi sql server
+az sql server create  -l swedencentral -g rg-sql-x01 -n sqlserver-1-8810 -u myAdmin -p Salainen-salasana
+
+# Luodaan uusi kanta
+az sql db create \
+    -g rg-sql-x01 \
+    --server sqlserver-1-8810 \
+    -n db-test-1-8810 \
+    --sample-name AdventureWorksLT 
+    --family Gen5 \
+    --capacity 1 \
+
+#    --zone-redundant false # zone redundancy is only supported on premium and business critical service tiers
+#  --capacity parameter refers to the vCore (virtual core) count for the database.
+
+
+
+# Get the Storage Account Key:
+# You’ll need the storage key to authenticate the export to the storage account.
+
+az storage account keys list \
+  --resource-group rg-storage-x01 \
+  --account-name stgaccount-x01
+
+# Export backpac
+az sql db export \
+  --resource-group rg-sql-x01 \
+  --server sqlserver-1-8810 \
+  --name db-test-1-8810 \
+  --admin-user myAdmin \
+  --admin-password Salainen-salasana \
+  --storage-key-type StorageAccessKey \
+  --storage-key == \
+  --storage-uri https://xxx.blob.core.windows.net/sql-backpac-test/db-test-pvm.bacpac
