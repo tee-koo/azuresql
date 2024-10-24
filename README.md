@@ -1,1 +1,1 @@
-# azuresql
+# Azure SQL related repo
