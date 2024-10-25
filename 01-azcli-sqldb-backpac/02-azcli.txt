@@ -12,7 +12,7 @@ az sql db create \
     --family Gen5 \
     --capacity 1 \
 
-#    --zone-redundant false # zone redundancy is only supported on premium and business critical service tiers
+#  --zone-redundant false # zone redundancy is only supported on premium and business critical service tiers
 #  --capacity parameter refers to the vCore (virtual core) count for the database.
 
 
