@@ -1,5 +1,4 @@
 
-
 # Luodaan uusi sql server
 az sql server create  -l swedencentral -g rg-sql-x01 -n sqlserver-1-8810 -u myAdmin -p Salainen-salasana
 
