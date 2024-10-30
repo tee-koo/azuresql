@@ -6,7 +6,6 @@ az sql db create \
     -g rg-sql-x01 \
     --server sqlserver-1-8810 \
     -n db-test-1-8810 \
-    --sample-name AdventureWorksLT 
     --family Gen5 \
     --capacity 1 \
 
