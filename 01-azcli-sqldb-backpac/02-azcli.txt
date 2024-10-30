@@ -16,7 +16,7 @@ az sql db create \
 
 
 # Get the Storage Account Key:
-# You’ll need the storage key to authenticate the export to the storage account.
+# You’ll need the storage key to authenticate the export to the existing storage account.
 
 az storage account keys list \
   --resource-group rg-storage-x01 \
