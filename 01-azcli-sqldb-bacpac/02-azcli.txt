@@ -8,6 +8,7 @@ az sql db create \
     -n db-test-1-8810 \
     --family Gen5 \
     --capacity 1 \
+    --backup-storage-redundancy local
 
 #  --zone-redundant false # zone redundancy is only supported on premium and business critical service tiers
 #  --capacity parameter refers to the vCore (virtual core) count for the database.
