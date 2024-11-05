@@ -3,7 +3,7 @@ az sql server create  -l swedencentral -g rg-sql-bacpac-x01 -n sqlserver-1-8810 
 
 # Luodaan uusi kanta
 az sql db create \
-    -g rg-sql-x01 \
+    -g rg-sql-bacpac-x01 \
     --server sqlserver-1-8810 \
     -n db-test-1-8810 \
     --family Gen5 \
