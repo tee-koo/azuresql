@@ -24,7 +24,7 @@ az storage account keys list \
 
 # Export backpac
 az sql db export \
-  --resource-group rg-sql-x01 \
+  --resource-group rg-sql-bacpac-x01 \
   --server sqlserver-1-8810 \
   --name db-test-1-8810 \
   --admin-user myAdmin \
