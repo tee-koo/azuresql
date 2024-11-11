@@ -14,13 +14,13 @@ az sql db create \
 #  --capacity parameter refers to the vCore (virtual core) count for the database.
 
 
-
 # Get the Storage Account Key:
 # You’ll need the storage key to authenticate the export to the existing storage account.
 
 az storage account keys list \
   --resource-group rg-storage-x01 \
   --account-name stgaccount-x01
+
 
 # Export backpac
 az sql db export \
