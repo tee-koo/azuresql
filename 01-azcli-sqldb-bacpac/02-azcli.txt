@@ -29,4 +29,4 @@ az sql db export \
   --admin-password Salainen-salasana \
   --storage-key-type StorageAccessKey \
   --storage-key == \
-  --storage-uri https://xxx.blob.core.windows.net/sql-backpac-test/db-test-pvm.bacpac
+  --storage-uri https://xxx.blob.core.windows.net/backpac-test/db-test-pvm.bacpac
