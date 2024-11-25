@@ -13,7 +13,7 @@ az sql db create \
     --backup-storage-redundancy local
 
 #  --zone-redundant false # zone redundancy is only supported on premium and business critical service tiers
-#  --capacity parameter refers to the vCore (virtual core) count for the database. 1 vCore in here.
+#  --capacity parameter refers to the vCore (virtual core) count for the database. 1 vCore in here
 
 # Get the Storage Account Key:
 # You’ll need the storage key to authenticate the export to the existing storage account.
