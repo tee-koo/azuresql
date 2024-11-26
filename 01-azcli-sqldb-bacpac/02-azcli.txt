@@ -22,7 +22,7 @@ az storage account keys list \
   --resource-group rg-storage-x01 \
   --account-name stgaccount-x01
 
-# Export backpac
+# Export bacpac
 az sql db export \
   --resource-group rg-sql-bacpac-x01 \
   --server sqlserver-1-8810 \
