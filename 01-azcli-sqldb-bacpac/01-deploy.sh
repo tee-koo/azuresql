@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RgName="rg-sql-bacpac-x01"
+Rg="rg-sql-bacpac-x01"
 Location="swedencentral"
 
 T1="env=test"
